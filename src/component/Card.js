@@ -10,7 +10,9 @@ const Cardpage = (props) => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         <h5>{}</h5>
       </div>
-      <button className="buy">asdasd</button>
+      <button className="buy" onClick={() => alert("go to order page")}>
+        Buy
+      </button>
     </div>
   );
 };
