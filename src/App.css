@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  display: flex;
+  direction: rtl;
+  flex-flow: row;
+  align-items: center;
+  background-color: red;
+}
