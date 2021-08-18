@@ -12,6 +12,7 @@ const Cardpage = (props) => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <h5>{}</h5>
           </div>
+          <button className="buy">asdasd</button>
         </div>
       </div>
     </React.Fragment>

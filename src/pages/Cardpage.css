@@ -1,12 +1,13 @@
 .Cardpage {
   /* margin-top: 80px; */
   margin: 80px auto;
-  background-color: red;
+  /* background-color: rgb(11, 12, 95); */
   width: 80%;
   height: 600px;
   border-radius: 25px;
   text-align: center;
   padding-top: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.198);
 }
 
 .cards {
@@ -61,4 +62,15 @@
 
 .card-body {
   padding: 1.2em;
+}
+.buy {
+  background-color: chartreuse;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.buy:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.198);
 }
