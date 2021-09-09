@@ -8,7 +8,7 @@ const Homepage = (props) => {
       <Header />
       <div className="cards">
         <Card name="پایتون" text="پایتون" />
-        <Card name="جاوااسکریپت" text="جاوااسکریپت" />
+        <Card name="جاوااسکریپت" text="جاوااسکریپت" textarea="ساینثل سیاتثصعهلار سینبلصهعثامسک سیبالصعثغ" />
       </div>
     </React.Fragment>
   );
