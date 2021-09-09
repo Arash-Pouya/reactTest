@@ -3,4 +3,7 @@
 }
 .cards{
     display: flex;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 55px;
 }

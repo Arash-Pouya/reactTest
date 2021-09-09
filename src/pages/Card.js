@@ -10,7 +10,6 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import python from "../assets/images/python.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -29,8 +28,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "red",
   },
   media: {
-    height: "200px",
+    height: "300px",
     margin: "auto",
+    padding: "35px",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -55,18 +55,17 @@ export default function RecipeReviewCard(props) {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  // const { name } = this.props;
   return (
     <Card className={classes.root}>
       <CardHeader />
-      <img src={python} />
+      <img className={classes.media} src={props.images} />
       <CardContent>
         <p className={classes.text}>{props.name}</p>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
+            [classes.expandOpen]: { expanded },
           })}
           onClick={handleExpandClick}
           aria-expanded={expanded}
