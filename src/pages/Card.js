@@ -12,20 +12,30 @@ import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: "400px",
     backgroundColor: "#383838",
     color: "white",
     margin: "0px 10px 15px 10px",
     display: "flex",
     flexDirection: "column",
     boxShadow: "0px 5px 10px black",
+    borderRadius: "30px",
   },
   text: {
-    // color: "red",
+    margin: "auto",
+    maxWidth: 345,
+  },
+  more: {
     textAlign: "center",
+    margin: "auto",
   },
   textarea: {
-    backgroundColor: "red",
+    backgroundColor: "black",
+    textAlign: "justify",
+    // padding: "10px",
+  },
+  Text: {
+    padding: "10px 10px 15px 10px",
   },
   media: {
     height: "300px",
@@ -59,25 +69,18 @@ export default function RecipeReviewCard(props) {
     <Card className={classes.root}>
       <CardHeader />
       <img className={classes.media} src={props.images} />
-      <CardContent>
-        <p className={classes.text}>{props.name}</p>
-      </CardContent>
       <CardActions disableSpacing>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: { expanded },
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
+        <p className={classes.text}>{props.name}</p>
+      </CardActions>
+      <CardActions disableSpacing>
+        <p className={classes.more} onClick={handleExpandClick} aria-expanded={expanded}>
+          بیشتر بدانید
+        </p>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <div className={classes.textarea}>
           <p>{props.text} چیست: </p>
-          <p className={classes.text}>{props.textarea}</p>
+          <p className={classes.Text}>{props.textarea}</p>
         </div>
       </Collapse>
     </Card>

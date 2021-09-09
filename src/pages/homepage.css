@@ -3,7 +3,9 @@
 }
 .cards{
     display: flex;
-    display: inline-flex;
-    flex-direction: row;
-    margin-right: 55px;
+    justify-content: space-around;
+margin: 5px 10px 5px 10px;
+}
+.cards div{
+    width: 350px;
 }
