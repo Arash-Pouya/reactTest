@@ -1,6 +1,5 @@
 import React from "react";
 import Homepage from "./pages/homepage";
-import Cardpage from "./pages/Cardpage";
 import Toolbar from "./containers/Header/Toolbar/Toolbar";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
@@ -10,7 +9,6 @@ const App = () => {
       <Toolbar />
       <div>
         <Route path="/" exact component={Homepage} />
-        <Route path="/Cardpage" exact component={Cardpage} />
       </div>
     </BrowserRouter>
   );

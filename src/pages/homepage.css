@@ -1,27 +1,6 @@
-.homepage {
-  width: 30%;
-  height: 80px;
-  margin: 20px auto;
-  border: 1px solid #eee;
-  background-color: rgb(21, 68, 170);
-  border-radius: 15px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-
-  padding-top: 50px;
+*{
+    direction: rtl;
 }
-.tow {
-  text-align: center;
-  color: white;
-  background-color: rgb(1, 0, 87);
-  width: 50%;
-  height: 800px;
-  margin: 20px auto;
-  border-radius: 15px;
-  box-shadow: 0 2px 3px #ccc;
-}
-.tow p {
-  padding-top: 50%;
-  font-size: 70px;
+.cards{
+    display: flex;
 }

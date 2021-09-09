@@ -1,17 +1,14 @@
 import React from "react";
 import "./homepage.css";
-const Homepage = () => {
+import Header from "../containers/Header/Header";
+import Card from "../pages/Card";
+const Homepage = (props) => {
   return (
     <React.Fragment>
-      <div className="homepage">this is home page</div>
-      <div className="tow">
-        <p>box 1</p>
-      </div>
-      <div className="tow">
-        <p>box 2</p>
-      </div>
-      <div className="tow">
-        <p>box 3</p>
+      <Header />
+      <div className="cards">
+        <Card name="پایتون" text="پایتون" />
+        <Card name="جاوااسکریپت" text="جاوااسکریپت" />
       </div>
     </React.Fragment>
   );
