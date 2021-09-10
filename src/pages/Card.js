@@ -10,6 +10,7 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "400px",
@@ -28,9 +29,13 @@ const useStyles = makeStyles((theme) => ({
   more: {
     textAlign: "center",
     margin: "auto",
+    "&:hover": {
+      borderBottom: "3.5px solid red",
+      cursor: "pointer",
+    },
   },
+
   textarea: {
-    backgroundColor: "black",
     textAlign: "justify",
     // padding: "10px",
   },
@@ -79,7 +84,7 @@ export default function RecipeReviewCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <div className={classes.textarea}>
-          <p>{props.text} چیست: </p>
+          {/* <p>{props.text} چیست: </p> */}
           <p className={classes.Text}>{props.textarea}</p>
         </div>
       </Collapse>
