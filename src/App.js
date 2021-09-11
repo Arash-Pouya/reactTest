@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from "./pages/homepage";
+import Homepage from "./pages/Homepage/homepage";
 import Toolbar from "./containers/Header/Toolbar/Toolbar";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";

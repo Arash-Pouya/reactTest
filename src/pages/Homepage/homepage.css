@@ -1,0 +1,28 @@
+*{
+    direction: rtl;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+margin: 5px 10px 5px 10px;
+}
+.cards div{
+    width: 350px;
+}
+.container{
+    padding: 40px;
+
+}
+.Success {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #008000;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+  }
