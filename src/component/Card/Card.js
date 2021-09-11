@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     boxShadow: "0px 5px 10px black",
     borderRadius: "30px",
+    direction: "rtl",
   },
   text: {
     margin: "auto",

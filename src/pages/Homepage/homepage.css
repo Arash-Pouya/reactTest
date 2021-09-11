@@ -1,17 +1,23 @@
 *{
     direction: rtl;
 }
-.cards{
-    display: flex;
-    justify-content: space-around;
-margin: 5px 10px 5px 10px;
-}
-.cards div{
-    width: 350px;
+.head{
+    text-align: center;
 }
 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
     padding: 40px;
-
+    background-color:#2A363B ;
+    color: white;
+    margin: 50px;
+    border-radius: 30px;
+    /* background-color: red; */
+}
+.container h2{
+    padding: 10px;
 }
 .Success {
     background-color: transparent;

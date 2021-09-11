@@ -1,8 +1,8 @@
 import React from "react";
 import "./homepage.css";
 import Header from "../../containers/Header/Header";
-import Card from "../Card/Card";
-import Container from "../Container/container";
+import Card from "../../component/Card/Card";
+import Example from "../../component/SiteExample/Example";
 import python from "../../assets/images/python.png";
 import django from "../../assets/images/django.png";
 import javascript from "../../assets/images/javascript.png";
@@ -13,7 +13,7 @@ const Homepage = (props) => {
   return (
     <React.Fragment>
       <Header />
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs>
           <Card
             images={python}
@@ -51,17 +51,19 @@ const Homepage = (props) => {
         </Grid>
       </Grid>
       <div className="container">
-        <Container />
-        <button
-          className="Success"
-          onClick={(e) => {
-            e.preventDefault();
-            window.location.href = "https://arash-pouya.github.io/BigTech/";
-          }}
-        >
-          ثبت سفارش
-        </button>
+        <h1 className="head">شرکت رایانه پندار آپادانا</h1>
+        <h2>طراحی وبسایت های فروشگاهی، شرکتی، آموزشی و مالی. طراحی برنامه های تحت وب سفارشی. انجام پروژه های مرتبط به علوم داده</h2>
       </div>
+      <Example />
+      <button
+        className="Success"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "https://arash-pouya.github.io/BigTech/";
+        }}
+      >
+        ثبت سفارش
+      </button>
     </React.Fragment>
   );
 };
