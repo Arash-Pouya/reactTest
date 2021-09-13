@@ -1,3 +1,8 @@
+.Header{
+    backdrop-filter: blur(50px);
+    background-color: #202a4455;
+    margin-bottom: 35px;
+}
 .Header img{
     width: 100%;
     /* margin-top: 45px; */

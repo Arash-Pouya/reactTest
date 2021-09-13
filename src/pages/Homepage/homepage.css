@@ -1,5 +1,5 @@
 *{
-    direction: rtl;
+    /* direction: rtl; */
 }
 .head{
     text-align: center;
@@ -10,7 +10,8 @@
     align-items: center;
     margin: auto;
     padding: 40px;
-    background-color:#2A363B ;
+    backdrop-filter: blur(20px);
+    background-color:#202a4469 ;
     color: white;
     margin: 50px;
     border-radius: 30px;
@@ -31,4 +32,5 @@
     padding: 10px;
     margin: 10px;
     font-weight: bold;
+margin: auto;
   }

@@ -9,7 +9,8 @@ import { red } from "@material-ui/core/colors";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "400px",
-    backgroundColor: "#383838",
+    backdropFilter: "blur(50px)",
+    backgroundColor: "#202a4455 ",
     color: "white",
     margin: "0px 10px 15px 10px",
     display: "flex",

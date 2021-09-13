@@ -3,6 +3,7 @@ import "./homepage.css";
 import Header from "../../containers/Header/Header";
 import Card from "../../component/Card/Card";
 import Example from "../../component/SiteExample/Example";
+import Footer from "../../component/Footer/footer";
 import python from "../../assets/images/python.png";
 import django from "../../assets/images/django.png";
 import javascript from "../../assets/images/javascript.png";
@@ -64,6 +65,7 @@ const Homepage = (props) => {
       >
         ثبت سفارش
       </button>
+      <Footer />
     </React.Fragment>
   );
 };

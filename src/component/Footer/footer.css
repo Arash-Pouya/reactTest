@@ -1,0 +1,12 @@
+.footer{
+    width: auto;
+    display: flex;
+    color:white;
+    backdrop-filter: blur(50px);
+    background-color: #202a4455;
+    border-radius: 20px 20px 0px 0px;
+    height: 400px;
+}
+.footer h1{
+    margin: 10px auto ;
+}
