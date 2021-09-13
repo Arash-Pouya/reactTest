@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "30px",
     direction: "rtl",
   },
+
   text: {
     margin: "auto",
     maxWidth: 345,
