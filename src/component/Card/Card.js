@@ -22,10 +22,12 @@ const useStyles = makeStyles((theme) => ({
 
   text: {
     margin: "auto",
+    fontSize: "20px",
     maxWidth: 345,
   },
   more: {
     textAlign: "center",
+    fontSize: "20px",
     margin: "auto",
     "&:hover": {
       borderBottom: "3.5px solid red",
@@ -35,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
 
   textarea: {
     textAlign: "justify",
+    fontSize: "20px",
+
     // padding: "10px",
   },
   Text: {

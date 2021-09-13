@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     color: "white",
+    fontSize: "20px",
     direction: "rtl",
     textAlign: "justify",
   },
