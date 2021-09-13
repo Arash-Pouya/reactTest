@@ -75,6 +75,15 @@ const Homepage = (props) => {
         >
           ثبت سفارش
         </button>
+        <button
+          className="Success"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "https://arash-pouya.github.io/BigTech/";
+          }}
+        >
+          ثبت سفارش
+        </button>
       </div>
       <Footer />
     </React.Fragment>
