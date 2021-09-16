@@ -12,8 +12,10 @@
     direction: rtl;
     margin: auto;
     padding: 40px;
+    /* backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.294); */
     backdrop-filter: blur(20px);
-    background-color:#202a4469 ;
+    background-color:#202a448c ;
     color: white;
     margin: 50px;
     border-radius: 30px;

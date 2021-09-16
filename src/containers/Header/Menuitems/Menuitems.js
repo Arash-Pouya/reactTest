@@ -7,8 +7,8 @@ const Menuitems = () => {
       <Menuitem link="/" active>
         صفحه اصلی
       </Menuitem>
-      <Menuitem link={{ pathname: "/Cardpage" }}>تب دوم</Menuitem>
-      <Menuitem link={{ pathname: "/!!" }}>تب سوم</Menuitem>
+      <Menuitem link={{ pathname: "/sigin" }}>تب دوم</Menuitem>
+      {/* <Menuitem link={{ pathname: "/!!" }}>تب سوم</Menuitem> */}
     </ul>
   );
 };
