@@ -66,9 +66,7 @@ const SignIn = (props) => {
         <p style={{ color: "red" }}>{errormessage}</p>
         <input type="text" placeholder="username" value={username} onChange={usernameHandler} />
         <input type="password" placeholder="password" value={password} onChange={passwordHandler} />
-        <button btnType="success" clicked={loginHandler}>
-          ورود
-        </button>
+        <button btnType="success">ورود</button>
       </div>
     </React.Fragment>
   );
