@@ -9,7 +9,6 @@ import django from "../../assets/images/django.png";
 import javascript from "../../assets/images/javascript.png";
 import react from "../../assets/images/react.png";
 import Grid from "@material-ui/core/Grid";
-import Google from "../../component/user/GoogleLogin/google";
 const Homepage = (props) => {
   return (
     <React.Fragment>
@@ -75,7 +74,6 @@ const Homepage = (props) => {
         >
           ثبت سفارش
         </button>
-        <Google />
       </div>
       <Footer />
     </React.Fragment>

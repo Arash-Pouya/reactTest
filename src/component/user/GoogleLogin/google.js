@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import GoogleLogin from "react-google-login";
 import { PostData } from "../../../services/PostData";
 import { Redirect } from "react-router-dom";
-// import "./Welcome.css";
+// import "/google.css";
 
 class Welcome extends Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class Welcome extends Component {
 
   render() {
     if (this.state.redirect || sessionStorage.getItem("userData")) {
-      return <Redirect to={"/home"} />;
+      return <Redirect to={"/homepage"} />;
     }
 
     // const responseFacebook = (response) => {
