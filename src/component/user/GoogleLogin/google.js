@@ -1,34 +1,18 @@
-import React, { useState } from "react";
-import { GoogleLogin, GoogleLogout } from "react-google-login";
-
-const clientId = "Your-Client-Id";
-
-function Login() {
-  const [showloginButton, setShowloginButton] = useState(true);
-  const [showlogoutButton, setShowlogoutButton] = useState(false);
-  const onLoginSuccess = (res) => {
-    console.log("Login Success:", res.profileObj);
-    setShowloginButton(false);
-    setShowlogoutButton(true);
+import React from "react";
+import GoogleLogin from "react-google-login";
+const google = () => {
+  const responseGoogle = (response) => {
+    console.log(response);
   };
-
-  const onLoginFailure = (res) => {
-    console.log("Login Failed:", res);
-  };
-
-  const onSignoutSuccess = () => {
-    alert("You have been logged out successfully");
-    console.clear();
-    setShowloginButton(true);
-    setShowlogoutButton(false);
-  };
-
   return (
     <div>
-      {showloginButton ? <GoogleLogin clientId={clientId} buttonText="Sign In" onSuccess={onLoginSuccess} onFailure={onLoginFailure} cookiePolicy={"single_host_origin"} isSignedIn={true} /> : null}
-
-      {showlogoutButton ? <GoogleLogout clientId={clientId} buttonText="Sign Out" onLogoutSuccess={onSignoutSuccess}></GoogleLogout> : null}
+      <div>
+        <h2>welcome!!</h2>
+        <GoogleLogin clientId="653993432546-q6jf5t3f60ehn8lnmod9p9li7075hgj5.apps.googleusercontent.com" buttonText="Login" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy={"single_host_origin"} />
+        <a href="/Signup">signup</a>
+      </div>
     </div>
   );
-}
-export default Login;
+};
+
+export default google;
