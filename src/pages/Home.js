@@ -17,7 +17,7 @@ class Home extends Component {
 
   render() {
     if (!sessionStorage.getItem("userData") || this.state.redirect) {
-      return <Redirect to={"/"} />;
+      return <Redirect to={"/homepage"} />;
     }
 
     return <div>Welcome {this.state.name}</div>;

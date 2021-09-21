@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import FacebookLogin from "react-facebook-login";
 import GoogleLogin from "react-google-login";
 import { PostData } from "../../../services/PostData";
 import { Redirect } from "react-router-dom";
@@ -51,7 +50,7 @@ class Welcome extends Component {
 
   render() {
     if (this.state.redirect || sessionStorage.getItem("userData")) {
-      return <Redirect to={"/homepage"} />;
+      return <Redirect to={"/home"} />;
     }
 
     // const responseFacebook = (response) => {
