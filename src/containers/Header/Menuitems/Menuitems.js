@@ -4,10 +4,7 @@ import Menuitem from "./Menuitem/Menuitem";
 const Menuitems = () => {
   return (
     <ul className="menuitems">
-      <Menuitem link="/" active>
-        صفحه اصلی
-      </Menuitem>
-      <Menuitem link={{ pathname: "/Homepage" }}>تب دوم</Menuitem>
+      <Menuitem link={{ pathname: "/" }} active></Menuitem>
       {/* <Menuitem link={{ pathname: "/!!" }}>تب سوم</Menuitem> */}
     </ul>
   );

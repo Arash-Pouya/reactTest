@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import "./homepage.css";
 import Header from "../../containers/Header/Header";
 import Card from "../../component/Card/Card";
@@ -10,6 +10,13 @@ import javascript from "../../assets/images/javascript.png";
 import react from "../../assets/images/react.png";
 import Grid from "@material-ui/core/Grid";
 const Homepage = (props) => {
+  // useEffect(() => {
+  //   if (!authenticated) {
+  //     props.history.replace("/");
+  //     alert("اجازه دسترسی ندارید");
+  //     return false;
+  //   }
+  // }, [authenticated, props.history]);
   return (
     <React.Fragment>
       <Header />
