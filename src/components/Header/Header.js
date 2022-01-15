@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <header className="header">
       <div>
-        <h1 className="mb-3">SO YOU’VE OUTGROWN YOUR WEBSITE</h1>
-        <p className="mb-3">It’s not meeting the needs of your business or your customers. But it can.</p>
+        <h1 className="mb-3">وقتش رسیده وبسایت خودتون رو گسترش بدید</h1>
+        <p className="mb-3">ما در شرکت رایانه پندار آپادانا به فکر شما هستیم</p>
       </div>
     </header>
   );

@@ -16,9 +16,10 @@ const Intro = (props) => {
   return (
     <div className={classes.join(" ")}>
       <img src={Paris} />
+      <span>02</span>
       <div>
-        <h1>WEB DESIGN & BRAND IDENTITY</h1>
-        <p>You understand your customers better than anyone. We know that, and we can help you turn that knowledge into results. We’ll help you refine an online brand experience that showcases the power of your business.</p>
+        <h1>یک تغییر فوق العاده</h1>
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشت.</p>
       </div>
     </div>
   );
