@@ -1,18 +1,16 @@
 import React from "react";
 import "./App.css";
-import Intro from "./components/Intro/Intro";
-import Header from "./components/Header/Header";
-import Order from "./components/Order/Order";
-import Search from "./components/Search/Search";
+import Header from "../src/components/Header/Header";
+import Intro from "../src/components/Intro/Intro";
+import Homepageone from "./pages/Homepageone";
 const App = () => {
   return (
     <div>
       <Header />
       <Intro />
       <Intro type="introleft" />
-      <Order />
-      <Order />
-      <Search />
+      <Homepageone />
+      {/* <Homepagetwo /> */}
     </div>
   );
 };

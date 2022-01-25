@@ -2,25 +2,25 @@ import React from "react";
 import "./Order.css";
 import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "mdb-react-ui-kit";
 
-const Order = () => {
+const Order = ({ person }) => {
   return (
     <div className="order">
       <MDBTable>
         <MDBTableBody>
           <tr>
             <th scope="row">نام مشتری</th>
-            <td>امیرحسین</td>
+            <td>{person.name}</td>
           </tr>
           <tr>
             <th scope="row">مشخصات محصول</th>
-            <td>سایت کاریابی</td>
+            <td>{person.email}</td>
           </tr>
           <tr>
             <th scope="row">شرایط انجام پروژه</th>
             <td>
               <MDBListGroup style={{ minWidth: "22rem" }}>
-                <MDBListGroupItem>مورد اول</MDBListGroupItem>
-                <MDBListGroupItem>مورد بعدی</MDBListGroupItem>
+                <MDBListGroupItem>{person.created}</MDBListGroupItem>
+                <MDBListGroupItem>{person.updated}</MDBListGroupItem>
                 <MDBListGroupItem>مورد بعدی</MDBListGroupItem>
                 <MDBListGroupItem>مورد بعدی</MDBListGroupItem>
               </MDBListGroup>
