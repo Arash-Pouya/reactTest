@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css";
-import { MDBInput, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardHeader, MDBCardFooter, MDBBtn } from "mdb-react-ui-kit";
-const Search = () => {
+import { MDBInput, MDBBtn } from "mdb-react-ui-kit";
+
+const Search = (props) => {
+  const [searchValue, setSearchValue] = useState("");
+
+  const handleSearchInputChanges = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  const callSearchFunction = (e) => {
+    e.preventDefault();
+    props.search(searchValue);
+    setSearchValue("");
+  };
+
   return (
-    <div className="search">
-      <MDBInput label="جستجو" type="text" id="formWhite" />
-      <div className="result">
-        <MDBCard alignment="center">
-          <MDBCardHeader>335789921</MDBCardHeader>
-          <MDBCardBody>
-            <MDBCardTitle>آقای حسین علیزاده</MDBCardTitle>
-            <MDBCardTitle>سایت فروشگاه مواد غذایی</MDBCardTitle>
-            <MDBBtn href="#">نمایش</MDBBtn>
-          </MDBCardBody>
-          <MDBCardFooter className="text-muted">در حال انجام</MDBCardFooter>
-        </MDBCard>
-      </div>
-    </div>
+    <form className="search">
+      <MDBInput label="نام خود را وارد کنید" id="form1" type="text" value={searchValue} onChange={handleSearchInputChanges} type="text" />
+      <MDBBtn color="success" onClick={callSearchFunction} type="submit">
+        جستجو
+      </MDBBtn>
+    </form>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Homepageone.css";
-import Search from "../Search";
+import Search from "../components/Search/Search";
 import Order from "../components/Order/Order";
 import axios from "axios";
 const Homepageone = () => {
@@ -22,12 +22,12 @@ const Homepageone = () => {
         setLoading(false);
       })
       .catch(function (error) {
-        alert("no" + error);
+        alert("مشتری مورد نظر پیدا نشد");
         // <p>{error}</p>;
       });
   };
   return (
-    <div className="search">
+    <div className="Search">
       <Search search={search} />
       {loading ? <span></span> : <Order person={orders} />}
     </div>

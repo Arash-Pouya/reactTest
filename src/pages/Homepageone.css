@@ -1,4 +1,4 @@
-.search {
+.Search {
   /* background-color: red; */
   display: flex;
   align-items: center;
@@ -6,10 +6,4 @@
   flex-direction: column;
   width: 80%;
   margin: 30px auto;
-}
-.search input {
-  border-radius: 10px;
-  /* background-color: red; */
-  /* width: 30%; */
-  margin: auto;
 }
