@@ -16,12 +16,14 @@ const Search = (props) => {
   };
 
   return (
-    <form className="search">
-      <MDBInput label="نام خود را وارد کنید" id="form1" type="text" value={searchValue} onChange={handleSearchInputChanges} type="text" />
-      <MDBBtn color="success" onClick={callSearchFunction} type="submit">
-        جستجو
-      </MDBBtn>
-    </form>
+    <div>
+      <form className="search">
+        <MDBInput contrast label="نام خود را وارد کنید" id="form1" type="text" value={searchValue} onChange={handleSearchInputChanges} />
+        <MDBBtn color="success" onClick={callSearchFunction} type="submit">
+          جستجو
+        </MDBBtn>
+      </form>
+    </div>
   );
 };
 

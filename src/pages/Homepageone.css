@@ -1,9 +1,0 @@
-.Search {
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 30px auto;
-}

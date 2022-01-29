@@ -1,0 +1,20 @@
+.Search {
+  padding-top: 10px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.335);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  color: black;
+}
+.errorMessage {
+  /* background-color: red; */
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}

@@ -1,19 +1,21 @@
 import axios from "axios";
 import React, { useState } from "react";
+import Order from "../components/Order/Order";
 
-const Homepage = () => {
-  const [result, setResult] = useState({});
+const Other = () => {
+  const [result, setResult] = useState([]);
   const handleOnChange = async (event) => {
     event.preventDefault();
     const { data } = await axios.get(`https://rapdana.herokuapp.com/api/order/?name=${event.target.value}`);
-    // setResult(data);
-    // console.log(data);
+    console.log(data[0].customer);
+    setResult(data);
   };
   return (
     <div>
-      <input onChange={handleOnChange} />
+      <input type="text" onChange={handleOnChange} />
+      {/* <Order person={result} /> */}
     </div>
   );
 };
 
-export default Homepage;
+export default Other;
