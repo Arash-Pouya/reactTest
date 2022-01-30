@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "../src/components/Header/Header";
 import Intro from "../src/components/Intro/Intro";
 import Customer from "./pages/Customer";
+import Footer from "./components/Footer/footer";
 const App = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const App = () => {
       <Intro number="01" />
       <Intro type="introleft" number="02" />
       <Customer />
+      {/* <Footer /> */}
     </div>
   );
 };

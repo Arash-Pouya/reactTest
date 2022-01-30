@@ -39,7 +39,7 @@ const Customer = () => {
   return (
     <div className="Search">
       <Search search={search} />
-      {loading && !errorMessage ? <span></span> : errorMessage ? <div className="errorMessage">{errorMessage}</div> : <Order person={orders} />}
+      {loading && !errorMessage ? <span>در حال بارگذاری</span> : errorMessage ? <div className="errorMessage">{errorMessage}</div> : <Order person={orders} />}
     </div>
   );
 };
