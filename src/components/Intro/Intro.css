@@ -28,7 +28,7 @@
   width: 80%;
   margin: 35px auto;
   display: flex;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   color: black;
   flex-direction: row-reverse;
   -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
