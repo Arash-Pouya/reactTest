@@ -8,8 +8,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Intro number="01" />
-      <Intro type="introleft" number="02" />
+      <Intro />
       <Customer />
       {/* <Footer /> */}
     </div>

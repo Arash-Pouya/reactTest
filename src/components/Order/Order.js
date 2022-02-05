@@ -5,7 +5,7 @@ import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "
 const Order = ({ person }) => {
   return (
     <div className="order">
-      <MDBTable>
+      <MDBTable responsive>
         <MDBTableBody>
           <tr>
             <th scope="row">نام مشتری</th>

@@ -4,7 +4,7 @@ body {
   font-family: Vazir;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../src/assets/images/background.jpg");
+  background-image: url("../src/assets/images/backgrounddark.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
