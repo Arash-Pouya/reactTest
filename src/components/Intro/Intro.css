@@ -3,10 +3,11 @@
   width: 80%;
   margin: 10px auto;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.335);
-  backdrop-filter: blur(30px);
   border-radius: 20px;
   color: black;
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
 }
 .intro div,
 .introleft div {
@@ -25,13 +26,14 @@
 .introleft {
   padding-top: 10px;
   width: 80%;
-  margin: 10px auto;
+  margin: 35px auto;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.335);
-  backdrop-filter: blur(30px);
   border-radius: 20px;
   color: black;
   flex-direction: row-reverse;
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
 }
 
 h1 {
@@ -47,8 +49,7 @@ p {
   text-align: justify;
   direction: rtl;
 }
-.intro span,
-.introleft span {
+.intro span {
   left: 50%;
   position: absolute;
   font-size: 60px;
@@ -60,7 +61,9 @@ p {
   left: 46%;
   position: absolute;
   font-size: 60px;
-  transform: translate(-1%, -30%);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff1f8f;
 }
 @media (max-width: 1304px) {
   .intro,
