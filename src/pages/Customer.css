@@ -21,7 +21,7 @@
 }
 .back {
   background-image: url("../assets/images/backgrounddark.jpg");
-
+  border-radius: 5px;
   /* background-color: rgba(255, 255, 255, 0); */
   backdrop-filter: blur(10px);
   padding: 10px;

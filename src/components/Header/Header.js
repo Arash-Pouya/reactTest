@@ -1,12 +1,11 @@
 import React from "react";
 import "./Header.css";
+import wall1 from "../../assets/images/wallpaper1.jpg";
 const Header = () => {
   return (
     <header className="header">
-      <div>
-        <h2>وقتش رسیده وبسایت خودتون رو گسترش بدید</h2>
-        <p className="mb-3">ما در شرکت رایانه پندار آپادانا به فکر شما هستیم</p>
-      </div>
+      <img src={wall1} />
+      <p>متخصصین ما در شرکت رایانه پندار آپادانا با تخصص و تجربه خود ، مشتری را در دنیای پیچیده و به سرعت در حال تغییر امروزی همراهی کرده و با شناسایی نیازهای این عزیزان ، بهترین راه حل ها را ارائه خواهند داد</p>
     </header>
   );
 };

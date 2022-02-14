@@ -4,7 +4,6 @@
   margin: 10px auto;
   display: flex;
   border-radius: 20px;
-  color: black;
   -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
@@ -28,22 +27,23 @@
   width: 80%;
   margin: 35px auto;
   display: flex;
-  /* border-radius: 20px; */
-  /* color: black;
   flex-direction: row-reverse;
+  /* border-radius: 20px;
   -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75); */
 }
 
 h1 {
+  color: black;
+  font-size: 30px;
   /* background: #ff0000;
   background: -webkit-linear-gradient(to left, #ff0000 41%, #000000 100%);
   background: -moz-linear-gradient(to left, #ff0000 41%, #000000 100%);
   background: linear-gradient(to left, #ff0000 41%, #000000 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  font-size: 35px;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px; */
 }
 p {
   text-align: justify;

@@ -1,5 +1,5 @@
 .App {
-  font-family: Vazir-Black;
+  /* font-family: Vazir-Black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -7,10 +7,16 @@
   direction: rtl;
   flex-flow: row;
   align-items: center;
-  background-color: red;
+  background-color: red; */
 }
 
 @font-face {
   font-family: "Vazir-Black";
   src: local("Vazir-Black"), url("./assets/fonts/Vazir-Black.ttf");
+}
+.IMG {
+  position: fixed;
+  top: 85%;
+  left: 3%;
+  width: 5%;
 }
