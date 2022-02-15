@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { MDBModal, MDBModalDialog, MDBModalContent, MDBModalHeader, MDBModalTitle, MDBModalBody, MDBModalFooter } from "mdb-react-ui-kit";
+import { MDBModal, MDBModalDialog, MDBModalContent, MDBModalBody, MDBModalFooter } from "mdb-react-ui-kit";
+import ReactTooltip from "react-tooltip";
 import "./App.css";
 import Header from "../src/components/Header/Header";
 import Intro from "../src/components/Intro/Intro";
@@ -15,7 +16,13 @@ const App = () => {
     <div className="App">
       <Header />
       <Intro />
-      <img className="IMG" src={Sear} onClick={toggleShow} />
+      <div className="IMG">
+        <a data-tip="در صورتیکه سفارشی برای شما ثبت شده بر روی تصویر ذره بین کلیک کنید">
+          <img src={Sear} onClick={toggleShow} />
+        </a>
+        <ReactTooltip className="extraClass" delayHide={1000} effect="solid" />
+      </div>
+
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
         <MDBModalDialog size="xl">
           <MDBModalContent>

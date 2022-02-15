@@ -17,6 +17,24 @@
 .IMG {
   position: fixed;
   top: 90%;
-  left: 3%;
-  width: 3%;
+  left: 5%;
+  z-index: 100;
 }
+.IMG img {
+  width: 10%;
+  cursor: pointer;
+  color: black;
+}
+.IMG img:hover {
+  width: 13%;
+}
+.extraClass {
+  font-size: 15px !important;
+  pointer-events: auto !important;
+}
+.extraClass:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* در صورتیکه سفارشی برای شما ثبت شده بر روی تصویر ذره بین کلیک کنید */

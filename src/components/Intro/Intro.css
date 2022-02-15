@@ -28,10 +28,10 @@
   margin: 35px auto;
   display: flex;
   flex-direction: row-reverse;
-  /* border-radius: 20px;
+  border-radius: 20px;
   -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75); */
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
 }
 
 h1 {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import wall1 from "../../assets/images/wallpaper1.jpg";
+import wall1 from "../../assets/images/wallpaper4.jpg";
 const Header = () => {
   return (
     <header className="header">
