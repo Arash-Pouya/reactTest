@@ -23,11 +23,20 @@ const Customer = () => {
       setErrorMessage("لطفا نام را به درستی وارد کنید");
       setLoading(false);
     } else {
-      axios.get(`https://rapdana.herokuapp.com/api/order?name=${searchValue}`).then((response) => {
+      let URL = `https://rapdana.herokuapp.com/api/order?name=${searchValue}`;
+      axios({
+        method: "get",
+        url: URL,
+        headers: {
+          // Accept: "applicaion/json",
+          "Content-Type": "text/html; charset=utf-8",
+        },
+      }).then((response) => {
         // console.log(response.data);
         if (response.status === 200) {
-          setOrder(response.data[0].customer);
-          console.log(response.data[0].customer);
+          const info = response.data;
+          console.log(response.data);
+          setOrder(info);
           setLoading(false);
         } else {
           setErrorMessage("متاسفانه مشتری مورد نظر یافت نشد");

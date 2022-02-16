@@ -4,11 +4,6 @@ body {
   font-family: Vazir;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("../src/assets/images/backgrounddark.jpg");
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 @font-face {
