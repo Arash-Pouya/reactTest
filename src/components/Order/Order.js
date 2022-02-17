@@ -19,7 +19,7 @@ const Order = ({ person }) => {
             <th scope="row">شرایط انجام پروژه</th>
             <td>
               <MDBListGroup style={{ minWidth: "22rem" }}>
-                <MDBListGroupItem>{person[4].content}</MDBListGroupItem>
+                <MDBListGroupItem>{person[0].content}</MDBListGroupItem>
               </MDBListGroup>
             </td>
           </tr>
