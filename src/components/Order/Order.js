@@ -6,14 +6,7 @@ import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "
 
 const Order = ({ person }) => {
   const payFunction=()=>{
-    axios.post(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`).then(response => {
-      console.log(response);
-      alert("Payment Success");
-    })
-    .catch(error => {
-      console.log("Payment Error: ", error);
-      alert("Payment Error");
-    });
+    axios.get(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
   }
   return (
     <div className="order">
