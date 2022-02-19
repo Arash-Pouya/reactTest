@@ -33,7 +33,7 @@ const Order = ({ person }) => {
       </MDBTable>
       <MDBBtn outline rounded color="success" onClick={() =>{
       axios
-      .post(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
+      .get(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
       .then(response => {
         console.log(response);
         alert("Payment Success");
