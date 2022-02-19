@@ -7,7 +7,6 @@ const Customer = () => {
   const [loading, setLoading] = useState(true);
   const [orders, setOrder] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
-  const payURL = "https://rapdana.herokuapp.com/api/pay";
   const search = (searchValue) => {
     setLoading(true);
     setErrorMessage(null);

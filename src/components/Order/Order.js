@@ -5,6 +5,7 @@ import axios from "axios";
 import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "mdb-react-ui-kit";
 
 const Order = ({ person }) => {
+  const person ={}
   return (
     <div className="order">
       <MDBTable responsive>
@@ -33,7 +34,7 @@ const Order = ({ person }) => {
       </MDBTable>
       <MDBBtn outline rounded color="success" onClick={() =>{
       axios
-      .get(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
+      .post(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
       .then(response => {
         console.log(response);
         alert("Payment Success");
