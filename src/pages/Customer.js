@@ -7,15 +7,7 @@ const Customer = () => {
   const [loading, setLoading] = useState(true);
   const [orders, setOrder] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
-  // useEffect(() => {
-  //   fetch("https://rapdana.herokuapp.com/api/order/?name=")
-  //     .then((response) => response.json())
-  //     .then((jsonResponse) => {
-  //       console.log(jsonResponse.Search);
-  //       setOrder(jsonResponse.Search);
-  //       setLoading(false);
-  //     });
-  // }, []);
+  const payURL = "https://rapdana.herokuapp.com/api/pay";
   const search = (searchValue) => {
     setLoading(true);
     setErrorMessage(null);
@@ -28,7 +20,6 @@ const Customer = () => {
         method: "get",
         url: URL,
         headers: {
-          // Accept: "applicaion/json",
           "Content-Type": "text/html; charset=utf-8",
         },
       }).then((response) => {

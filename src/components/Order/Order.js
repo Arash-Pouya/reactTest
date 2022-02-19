@@ -29,7 +29,7 @@ const Order = ({ person }) => {
           </tr>
         </MDBTableBody>
       </MDBTable>
-      <MDBBtn outline rounded color="success">
+      <MDBBtn outline rounded color="success" onClick={() => window.open(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`, "_blank")}>
         پرداخت
       </MDBBtn>
     </div>
