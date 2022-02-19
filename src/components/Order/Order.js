@@ -1,5 +1,7 @@
 import React from "react";
 import "./Order.css";
+import axios from "axios";
+
 import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "mdb-react-ui-kit";
 
 const Order = ({ person }) => {
@@ -29,7 +31,22 @@ const Order = ({ person }) => {
           </tr>
         </MDBTableBody>
       </MDBTable>
-      <MDBBtn outline rounded color="success" onClick={() => window.open(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`, "_blank")}>
+      <MDBBtn outline rounded color="success" onClick={() =>{
+      axios
+      .post(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
+      .then(response => {
+        console.log(response);
+        alert("Payment Success");
+      })
+      .catch(error => {
+        console.log("Payment Error: ", error);
+        alert("Payment Error");
+      });
+      }
+  
+      
+      
+      }>
         پرداخت
       </MDBBtn>
     </div>
