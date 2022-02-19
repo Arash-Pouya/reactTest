@@ -5,7 +5,16 @@ import axios from "axios";
 import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "mdb-react-ui-kit";
 
 const Order = ({ person }) => {
-  const person ={}
+  const payFunction=()=>{
+    axios.post(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`).then(response => {
+      console.log(response);
+      alert("Payment Success");
+    })
+    .catch(error => {
+      console.log("Payment Error: ", error);
+      alert("Payment Error");
+    });
+  }
   return (
     <div className="order">
       <MDBTable responsive>
@@ -32,22 +41,7 @@ const Order = ({ person }) => {
           </tr>
         </MDBTableBody>
       </MDBTable>
-      <MDBBtn outline rounded color="success" onClick={() =>{
-      axios
-      .post(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
-      .then(response => {
-        console.log(response);
-        alert("Payment Success");
-      })
-      .catch(error => {
-        console.log("Payment Error: ", error);
-        alert("Payment Error");
-      });
-      }
-  
-      
-      
-      }>
+      <MDBBtn outline rounded color="success" onClick={payFunction}>
         پرداخت
       </MDBBtn>
     </div>
