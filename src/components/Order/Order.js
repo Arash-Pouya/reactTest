@@ -52,7 +52,7 @@ const Order = ({ person }) => {
         </MDBTableBody>
       </MDBTable>
       <form
-				action={`https://rapdana.herokuapp.com/api/pay/?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`}
+				action={`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`}
 				method='POST'
 			>
 				<button type='submit'>
