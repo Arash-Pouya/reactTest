@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import { MDBModal, MDBModalDialog, MDBModalContent, MDBModalBody, MDBModalFooter } from "mdb-react-ui-kit";
 import ReactTooltip from "react-tooltip";
 import "./App.css";
 import Header from "../src/components/Header/Header";
 import Intro from "../src/components/Intro/Intro";
 import Customer from "./pages/Customer";
-import Footer from "./components/Footer/footer";
 import Sear from "../src/assets/images/search.png";
 const App = () => {
   const [basicModal, setBasicModal] = useState(false);
@@ -22,12 +22,13 @@ const App = () => {
         </a>
         <ReactTooltip className="extraClass" delayHide={1000} effect="solid" />
       </div>
-
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
         <MDBModalDialog size="xl">
           <MDBModalContent>
             <MDBModalBody>
-              <Customer />
+              <Router>
+                <Route path="/" component={Customer} />
+              </Router>
             </MDBModalBody>
           </MDBModalContent>
         </MDBModalDialog>
