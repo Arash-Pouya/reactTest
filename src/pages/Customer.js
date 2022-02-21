@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Customer.css";
 import Order from "../components/Order/Order";
 import Search from "../components/Search/Search";

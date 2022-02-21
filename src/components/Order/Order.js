@@ -1,32 +1,13 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "./Order.css";
-import { useLocation } from 'react-router-dom';
-import QueryString from 'query-string';
+import axios from "axios";
 
 import { MDBTable, MDBListGroup, MDBBtn, MDBListGroupItem, MDBTableBody } from "mdb-react-ui-kit";
 
 const Order = ({ person }) => {
-	const location = useLocation();
 
-	useEffect(() => {
-		// Check to see if this is a redirect back from Checkout
-		// const query = new URLSearchParams(window.location.search);
-		const values = QueryString.parse(location.search);
-
-		if (values.success) {
-			console.log(
-				'Order placed! You will receive an email confirmation.'
-			);
-		}
-
-		if (values.canceled) {
-			console.log(
-				"Order canceled -- continue to shop around and checkout when you're ready."
-			);
-		}
-	}, []);
   return (
-    <section className="order">
+    <div className="order">
       <MDBTable responsive>
         <MDBTableBody>
           <tr>
@@ -51,21 +32,13 @@ const Order = ({ person }) => {
           </tr>
         </MDBTableBody>
       </MDBTable>
-      <form
-				action={`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`}
-				method='POST'
-			>
-				<button type='submit'>
-					Checkout
-				</button>
-			</form>
-      {/* <MDBBtn outline rounded color="success" onClick={()=>{
+      <MDBBtn outline rounded color="success" onClick={()=>{
         window.open(`https://rapdana.herokuapp.com/api/pay?name=${person.[0].customer.name}&order_id=${person.[0].order_id}`)
       
       }}>
         پرداخت
-      </MDBBtn> */}
-    </section>
+      </MDBBtn>
+    </div>
   );
 };
 

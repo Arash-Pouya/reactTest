@@ -16,7 +16,7 @@
     "react-dom": "^17.0.2",
     "react-google-login": "^5.2.2",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-tooltip": "^4.2.21",
     "useref": "^1.4.3",
