@@ -14,7 +14,7 @@ const Customer = () => {
       setErrorMessage("لطفا نام را به درستی وارد کنید");
       setLoading(false);
     } else {
-      let URL = `https://rapdana.herokuapp.com/api/order?name=${searchValue}`;
+      let URL = `https://rapadana.ir/api/order?name=${searchValue}`;
       axios({
         method: "get",
         url: URL,
@@ -22,10 +22,8 @@ const Customer = () => {
           "Content-Type": "text/html; charset=utf-8",
         },
       }).then((response) => {
-        // console.log(response.data);
         if (response.status === 200) {
           const info = response.data;
-          console.log(response.data);
           setOrder(info);
           setLoading(false);
         } else {

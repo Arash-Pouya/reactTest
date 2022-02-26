@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./Intro.css";
 import Wall1 from "../../assets/images/one.jpg";

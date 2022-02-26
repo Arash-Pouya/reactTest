@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Vazir-Black";
-  src: local("Vazir-Black"), url("./assets/fonts/Vazir-Black.ttf");
+  font-family: "Sahel";
+  src: local("Sahel"), url("./assets/fonts/Sahel-Black-FD.ttf");
 }
 .IMG {
   position: fixed;

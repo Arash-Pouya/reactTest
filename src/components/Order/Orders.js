@@ -1,19 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Order from "./Order";
-import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 const Orders = (props) => {
-  // useEffect(() => {
-  //console.log(props.orderlist)
-  // }, [props.orderlist]);
-  // let orders = props.orderlist.map((order) => (
-  //   <ErrorBoundary>
-  //     <Order name={order.name} email={order.email} created={order.created} updated={order.updated} />
-  //   </ErrorBoundary>
-  // ));
-  // if (props.toggle) {
-  //   return { orders };
-  // }
-  // return orders;
   if (props.toggle) {
     return (
       <div className="student-section">

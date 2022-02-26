@@ -4,7 +4,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "./assets/fonts/Vazir-Black.ttf";
+import "./assets/fonts/Sahel-Black-FD.ttf";
 ReactDOM.render(
   <React.StrictMode>
     <App />

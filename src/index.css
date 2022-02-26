@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: Vazir;
+  font-family: Sahel;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: "Vazir";
-  src: local("Vazir"), url(./assets/fonts/Vazir-Black.ttf) format("truetype");
+  font-family: "Sahel";
+  src: local("Sahel"), url(./assets/fonts/Sahel-Black-FD.ttf) format("truetype");
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;

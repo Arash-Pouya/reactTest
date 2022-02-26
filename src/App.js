@@ -1,11 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import { MDBModal, MDBModalDialog, MDBModalContent, MDBModalBody, MDBModalFooter } from "mdb-react-ui-kit";
+import { MDBModal, MDBModalDialog, MDBModalContent, MDBModalBody } from "mdb-react-ui-kit";
 import ReactTooltip from "react-tooltip";
 import "./App.css";
 import Header from "../src/components/Header/Header";
 import Intro from "../src/components/Intro/Intro";
 import Customer from "./pages/Customer";
-import Footer from "./components/Footer/footer";
 import Sear from "../src/assets/images/search.png";
 const App = () => {
   const [basicModal, setBasicModal] = useState(false);
@@ -22,7 +23,6 @@ const App = () => {
         </a>
         <ReactTooltip className="extraClass" delayHide={1000} effect="solid" />
       </div>
-
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
         <MDBModalDialog size="xl">
           <MDBModalContent>
@@ -32,8 +32,6 @@ const App = () => {
           </MDBModalContent>
         </MDBModalDialog>
       </MDBModal>
-
-      {/* <Footer /> */}
     </div>
   );
 };
