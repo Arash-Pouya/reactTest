@@ -14,7 +14,7 @@ const Customer = () => {
       setErrorMessage("لطفا نام را به درستی وارد کنید");
       setLoading(false);
     } else {
-      let URL = `https://rapadana.ir/api/order?name=${searchValue}`;
+      let URL = `https://rapadana.ir/api/order?order_id=${searchValue}`;
       axios({
         method: "get",
         url: URL,
@@ -23,6 +23,7 @@ const Customer = () => {
         },
       }).then((response) => {
         if (response.status === 200) {
+          console.log(response.data);
           const info = response.data;
           setOrder(info);
           setLoading(false);

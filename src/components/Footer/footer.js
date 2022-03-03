@@ -1,22 +1,34 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./footer.css";
-import Card from "./Card";
-import javascript from "../../assets/images/javascript.png";
-import react from "../../assets/images/react.png";
-import python from "../../assets/images/python.png";
-import django from "../../assets/images/django.png";
+import { MDBFooter, MDBContainer, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 const Footer = (props) => {
   return (
     <div className="footer">
-      <Card name="arash pouya" about="FrontEnd developrt" lang1="JavaScript" lang2="React" linklink="www.linkedin.com/in/arash-pouya" gitlink="https://github.com/Arash-Pouya" />
-      {/* <div className="img">
-        <img src={javascript} />
-        <img src={react} />
-        <img src={python} />
-        <img src={django} />
-      </div> */}
-      <Card name="ehsan bikdeli" about="BackEnd developrt" lang1="Python" lang2="Django" linklink="" gitlink="" />
+      <MDBFooter className="text-center text-white">
+        <MDBContainer className="p-4">
+          <section className="">
+            <div className="row d-flex justify-content-center">
+              <MDBCol lg="6">
+                <div className="text">
+                  <p>
+                    <img src="https://img.icons8.com/nolan/40/phone.png" />
+                    <span> شماره تماس : 0999999</span>
+                  </p>
+                  <p>
+                    <img src="https://img.icons8.com/nolan/40/phone.png" />
+                    <span> شماره تماس : 0999999</span>
+                  </p>
+                  <p>iuasdgasiudtgdui</p>
+                </div>
+              </MDBCol>
+            </div>
+          </section>
+        </MDBContainer>
+        <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}>
+          طراحی شده توسط شرکت رایانه پندار آپادانا
+        </div>
+      </MDBFooter>
     </div>
   );
 };

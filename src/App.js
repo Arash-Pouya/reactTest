@@ -7,6 +7,7 @@ import "./App.css";
 import Header from "../src/components/Header/Header";
 import Intro from "../src/components/Intro/Intro";
 import Customer from "./pages/Customer";
+import Footer from "../src/components/Footer/footer";
 import Sear from "../src/assets/images/search.png";
 const App = () => {
   const [basicModal, setBasicModal] = useState(false);
@@ -17,6 +18,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Intro />
+      <Footer />
       <div className="IMG">
         <a data-tip="در صورتیکه سفارشی برای شما ثبت شده بر روی تصویر ذره بین کلیک کنید">
           <img src={Sear} onClick={toggleShow} />
