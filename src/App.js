@@ -7,6 +7,7 @@ import "./App.css";
 import Header from "../src/components/Header/Header";
 import Intro from "../src/components/Intro/Intro";
 import Customer from "./pages/Customer";
+import Textarea from "./components/TextArea/Textarea";
 import Footer from "../src/components/Footer/footer";
 import Sear from "../src/assets/images/search.png";
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Intro />
+      <Textarea />
       <Footer />
       <div className="IMG">
         <a data-tip="در صورتیکه سفارشی برای شما ثبت شده بر روی تصویر ذره بین کلیک کنید">

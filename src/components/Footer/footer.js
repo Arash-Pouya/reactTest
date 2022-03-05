@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./footer.css";
-import { MDBFooter, MDBContainer, MDBCol, MDBIcon } from "mdb-react-ui-kit";
+import { MDBFooter, MDBContainer, MDBCol } from "mdb-react-ui-kit";
 const Footer = (props) => {
   return (
     <div className="footer">
@@ -12,14 +12,15 @@ const Footer = (props) => {
               <MDBCol lg="6">
                 <div className="text">
                   <p>
-                    <img src="https://img.icons8.com/nolan/40/phone.png" />
-                    <span> شماره تماس : 0999999</span>
+                    <img src="https://img.icons8.com/fluency/25/000000/phone.png" /> <span> شماره تماس : 0999999</span>
                   </p>
                   <p>
-                    <img src="https://img.icons8.com/nolan/40/phone.png" />
-                    <span> شماره تماس : 0999999</span>
+                    <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/25/000000/external-location-user-interface-flatart-icons-flat-flatarticons-1.png" /> <span> آدرس : خوزستان ، اهواز</span>
                   </p>
-                  <p>iuasdgasiudtgdui</p>
+                  <p>
+                    <img src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/25/000000/external-email-contact-us-xnimrodx-lineal-gradient-xnimrodx-4.png" />
+                    <span> bigtech.webcompany@gmail.com</span>
+                  </p>
                 </div>
               </MDBCol>
             </div>
