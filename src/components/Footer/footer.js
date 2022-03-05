@@ -12,14 +12,14 @@ const Footer = (props) => {
               <MDBCol lg="6">
                 <div className="text">
                   <p>
-                    <img src="https://img.icons8.com/fluency/25/000000/phone.png" /> <span> شماره تماس : 0999999</span>
+                    <img src="https://img.icons8.com/fluency/25/000000/phone.png" /> <span> شماره تماس : 09160331892</span>
                   </p>
                   <p>
                     <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/25/000000/external-location-user-interface-flatart-icons-flat-flatarticons-1.png" /> <span> آدرس : خوزستان ، اهواز</span>
                   </p>
                   <p>
                     <img src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/25/000000/external-email-contact-us-xnimrodx-lineal-gradient-xnimrodx-4.png" />
-                    <span> bigtech.webcompany@gmail.com</span>
+                    <span> rp.apadana@gmail.com</span>
                   </p>
                 </div>
               </MDBCol>

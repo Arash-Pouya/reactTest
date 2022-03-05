@@ -12,13 +12,23 @@
   box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
 }
 .textarea textarea {
+  border: 0.5px solid black;
   border-radius: 10px;
   width: 60%;
+  height: 200px;
+  margin: 30px;
+  direction: rtl;
+  padding: 10px;
+}
+.textarea input {
+  border-radius: 8px;
   margin: 30px;
   direction: rtl;
 }
-.textarea input {
-  border-radius: 3px;
-  margin: 30px;
-  direction: rtl;
+.textarea input::placeholder,
+.textarea textarea::placeholder {
+  text-align: center;
+}
+.setError {
+  margin-top: 10px;
 }

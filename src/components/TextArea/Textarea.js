@@ -11,10 +11,8 @@ const Textarea = () => {
     try {
       let res = await fetch("https://rapadana.ir/api/customer-request/", {
         method: "POST",
-        // cache: "no-cache",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        cache: "no-cache",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: name,
           message: message,
@@ -24,22 +22,20 @@ const Textarea = () => {
       if (res.status === 200) {
         setName("");
         setMessage("");
-        setError("User created successfully");
-        console.log(resJson);
+        setError("پیام شما با موفقیت ارسال شد");
       } else {
-        setError("Some error occured");
+        setError("پیام شما رسال نشد");
       }
     } catch (err) {
       console.log(err);
     }
   };
-
   return (
     <div>
       <form className="textarea" onSubmit={handleSubmit}>
         <input value={name} placeholder="نام خود را وارد کنید" onChange={(e) => setName(e.target.value)}></input>
         <textarea value={message} placeholder="پیغام خود را در این قسمت وارد کنید" onChange={(e) => setMessage(e.target.value)}></textarea>
-        <button type="submit">Submit</button>
+        <MDBBtn type="submit">ارسال</MDBBtn>
         <div className="setError">{error ? <p>{error}</p> : null}</div>
       </form>
     </div>
