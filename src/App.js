@@ -19,6 +19,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Intro />
+      <h4 className="titletext">برای ثبت درخواست طراحی سایت و یا ارسال هرگونه پیشنهاد فرم زیر را تکمیل کنید</h4>
       <Textarea />
       <Footer />
       <div className="IMG">

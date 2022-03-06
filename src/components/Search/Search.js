@@ -18,7 +18,7 @@ const Search = (props) => {
   return (
     <div>
       <form className="search">
-        <MDBInput size="lg" label="نام خود را وارد کنید" id="form1" type="text" value={searchValue} onChange={handleSearchInputChanges} />
+        <MDBInput size="lg" label="شماره سفارش خود را وارد کنید" id="form1" type="text" value={searchValue} onChange={handleSearchInputChanges} />
         <MDBBtn color="success" onClick={callSearchFunction} type="submit">
           جستجو
         </MDBBtn>

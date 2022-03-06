@@ -29,4 +29,7 @@
   opacity: 1 !important;
 }
 
-/* در صورتیکه سفارشی برای شما ثبت شده بر روی تصویر ذره بین کلیک کنید */
+.titletext {
+  margin-top: 50px;
+  text-align: center;
+}

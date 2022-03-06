@@ -60,13 +60,18 @@ p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ff1f8f;
 }
-@media (max-width: 1304px) {
+@media (max-width: 1000px) {
   .intro,
   .introleft {
     flex-direction: column;
   }
+  .intro,
+  .introleft {
+    width: 50%;
+  }
   .intro img,
   .introleft img {
+    height: 300px;
     margin: 10px;
   }
 }

@@ -11,7 +11,7 @@ const Customer = () => {
     setLoading(true);
     setErrorMessage(null);
     if (searchValue === "") {
-      setErrorMessage("لطفا نام را به درستی وارد کنید");
+      setErrorMessage("لطفا شماره سفارش را به درستی وارد کنید");
       setLoading(false);
     } else {
       let URL = `https://rapadana.ir/api/order?order_id=${searchValue}`;
@@ -28,7 +28,7 @@ const Customer = () => {
           setOrder(info);
           setLoading(false);
         } else {
-          setErrorMessage("متاسفانه مشتری مورد نظر یافت نشد");
+          setErrorMessage("سفارشی با شماره وارد شده ثبت نشده است");
           setLoading(false);
         }
       });

@@ -22,9 +22,9 @@ const Textarea = () => {
       if (res.status === 200) {
         setName("");
         setMessage("");
-        setError("پیام شما با موفقیت ارسال شد");
+        setError(<p style={{ color: "green" }}>پیام شما با موفقیت ارسال شد</p>);
       } else {
-        setError("پیام شما رسال نشد");
+        setError(<p style={{ color: "red" }}>پیام شما ارسال نشد</p>);
       }
     } catch (err) {
       console.log(err);
@@ -33,8 +33,8 @@ const Textarea = () => {
   return (
     <div>
       <form className="textarea" onSubmit={handleSubmit}>
-        <input value={name} placeholder="نام خود را وارد کنید" onChange={(e) => setName(e.target.value)}></input>
-        <textarea value={message} placeholder="پیغام خود را در این قسمت وارد کنید" onChange={(e) => setMessage(e.target.value)}></textarea>
+        <input value={name} placeholder="آدرس ایمیل" onChange={(e) => setName(e.target.value)}></input>
+        <textarea value={message} placeholder="متن پیام" onChange={(e) => setMessage(e.target.value)}></textarea>
         <MDBBtn type="submit">ارسال</MDBBtn>
         <div className="setError">{error ? <p>{error}</p> : null}</div>
       </form>
