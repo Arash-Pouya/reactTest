@@ -73,7 +73,11 @@ a {
   display: inline-block;
   margin-left: 1rem;
 }
-
+.nav-bar p:hover{
+  color: var(--accent-color-cyan);
+  transition: 600ms;
+  cursor: pointer;
+}
 a:hover {
   color: var(--accent-color-cyan);
   transition: 600ms;
@@ -250,9 +254,9 @@ border-radius: 10px;
 }
 
 .btn-block {
+margin: 10px auto;
   width: 20%;
   max-width: 250px;
-  margin-left: 1rem;
 }
 
 .contact-info {
@@ -440,4 +444,11 @@ footer p {
   .contact-info {
       padding: var(--padding-footer-mobile);
   }
+}
+
+.sss{
+color:black;
+text-align: center;
+justify-content: center;
+
 }
