@@ -13,6 +13,11 @@
   --padding-footer-tablet: 20rem 3rem 1rem;
   --padding-footer-mobile: 25rem 3rem 1rem;
 }
+.Toastify__toast-body  {
+  font-family: "Sahel";
+  src: local("Sahel"), url("./assets/fonts/Sahel-Black-FD.ttf");
+
+}
 
 @font-face {
   font-family: "Sahel";

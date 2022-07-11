@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { MDBModal, MDBModalDialog, MDBModalContent, MDBModalBody } from "mdb-react-ui-kit";
 import Spinner from "../../components/main/Spinner/Spinner";
-import toast, { Toaster } from "react-hot-toast";
-
+import Toastify from "../Modal/Notif/Toastify";
 export default function OrderTracking(props) {
-  // const notify = () => toast.error("متاسفانه سفارش شما ثبت نشده است");
   const [optSmModal, setOptSmModal] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [title, setTitle] = useState("");
-  const [notify, setNotify] = useState(null);
+  const [toast, setToast] = useState({ type: "info", message: "" });
+  // const [notify, setNotify] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleSearchInputChanges = (e) => {
@@ -28,7 +27,8 @@ export default function OrderTracking(props) {
           setTitle(post.title);
         } else {
           setLoading(false);
-          setNotify(toast.error("متاسفانه سفارش شما ثبت نشده است"));
+          // setNotify(toast.error("متاسفانه سفارش شما ثبت نشده است"));
+          setToast({ type: "error", message: "متاسفانه سفارش شما ثبت نشده است" });
         }
       });
   };
@@ -46,7 +46,7 @@ export default function OrderTracking(props) {
         <button className="btn-block" onClick={callSearchFunction}>
           پیگیری
         </button>
-        {loading ? <Spinner /> : <Toaster />}
+        {loading ? <Spinner /> : <Toastify type={toast.type} message={toast.message} />}
         <div className="sss">
           <MDBModal show={optSmModal} tabIndex="-1" setShow={setOptSmModal}>
             <MDBModalDialog size="sm">
