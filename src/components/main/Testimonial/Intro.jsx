@@ -1,7 +1,7 @@
 import React from "react";
-import Headerimg from "../../assets/images/c3765b39-0651-4ffd-82f9-291a69aabedb-removebg-preview.png";
+import Headerimg from "../../../assets/images/c3765b39-0651-4ffd-82f9-291a69aabedb-removebg-preview.png";
 
-export default function Intro() {
+export default function Intro(props) {
   return (
     <section className="intro">
       <div className="intro-img">

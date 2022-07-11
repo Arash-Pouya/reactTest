@@ -1,8 +1,8 @@
 import React from "react";
 import Item from "./Item";
-import IMAGE1 from "../../assets/images/one.jpg";
-import IMAGE2 from "../../assets/images/two.jpg";
-import IMAGE3 from "../../assets/images/three.jpg";
+import IMAGE1 from "../../../assets/images/one.jpg";
+import IMAGE2 from "../../../assets/images/two.jpg";
+import IMAGE3 from "../../../assets/images/three.jpg";
 export default function Features() {
   return (
     <section className="features">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <nav className="nav-bar">
       <ul>
@@ -8,7 +8,7 @@ export default function Header() {
           <a href="#">وبلاگ</a>
         </li>
         <li>
-          <a href="#">پیگیری سفارش</a>
+          <p onClick={props.click}>پیگیری سفارش</p>
         </li>
       </ul>
     </nav>
